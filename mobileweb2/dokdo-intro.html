@@ -1,0 +1,155 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>KAKAO</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="123.png" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">KAKAO 소개</a></li>
+				<li><a href="#movie" >KAKAO 홍보영상</a></li>
+				<li><a href="#wizard3-1" >KAKAO 채용</a></li>
+				<li><a href="#gallery">만든이</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>KAKAO Contents</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="a">
+		<div data-role="header" data-theme="a">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>카카오톡 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img width="300" src="kakao.png">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="b">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>카카오 연혁 </h3>
+					<p><img width="600" src="12345.png"></p>
+				</div>
+				<div data-role="collapsible">
+					<h3>카카오 인재상</h3>
+					<p><img width="600" src="1.png"></p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>카카오 위치</h3>
+				 <img width="600" src="5-1.png">
+				 <img width="600" src="5-2.png">
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>KAKAO Information</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>KAKAO 홍보 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-e">카카오 홍보영상</div><br/>
+			<li><iframe title="새로운 연결 새로운 세상, 다음카카오!" width="640" height="360"src="https://tv.kakao.com/embed/player/cliplink/303112831?service=kakao_tv" allowfullscreen frameborder="0" scrolling="no"></iframe></li><br/>
+			<div class="ui-bar ui-bar-e"></div><br/>
+			<li><iframe title="[카카오 이모티콘] 이모티콘 그 이상이 시작되다" width="640" height="360"src="https://tv.kakao.com/embed/player/cliplink/372733029?service=kakao_tv" allowfullscreen frameborder="0" scrolling="no"></iframe>	</li>
+		</div>
+		<div data-role="footer" data-theme="b">
+			<h1>KAKAO PR VIDEO</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>진행중인 공고1</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">시스템 소프트웨어 엔지니어</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="1.mp3" type="audio/mp3">
+			</audio>	
+			<img width="600" src="3-1.png">
+			<img width="600" src="3-2.png">
+			<img width="600" src="3-3.JPG">
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-transition="slide">처음</a>
+			<a href="#wizard3-2" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-2">
+		<div data-role="header">
+			<h1>진행중인 공고2</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">보이스톡/페이스톡 개발자</div><br/>
+			
+			<img width="600" src="4-1.png">
+			<img width="600" src="4-2.png">
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#wizard3-3 "data-transition="slide">다음</a>
+		</div>
+	</div>
+    <div data-role="page" id="wizard3-3">
+		<div data-role="header">
+			<h1>진행중인 공고3</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">웹 서비스 개발자</div><br/>
+			
+			<img width="600" src="6-1.jpg">
+			<img width="600" src="6-2.jpg">
+		    <img width="600" src="6-3.jpg">
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-2"  data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>만든이</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="YOON2.jpg"rel="external"><img src="YOON1.jpg" /></a></li>	
+			</ul>
+			<h1>끝까지 봐주셔서 감사합니다.</h1>
+			 <img width="300" src="7-1.jpg">
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>Email : wpdbsx@naver.com Tel 010-xxxx-xxxx</h1>
+		</div>		
+		
+	</div>
+</div>	
+</body>
+</html>
